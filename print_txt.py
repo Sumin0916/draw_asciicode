@@ -2,7 +2,7 @@ import cv2
 import os
 from glob import glob
 
-file_path = 'C:\\Users\\gsmin2020\\Desktop\\imgcvt_char'
+file_path = 'input_file_path'
 file_names = os.listdir(file_path)
 char = ' .,-◂~:;=!*ᧉө#$@░▒▓█' #20
 nw = 100
@@ -22,3 +22,4 @@ for img_path in glob('img/*.jpg'):
             print(char[index])
 
         print()
+os.system('pause')
