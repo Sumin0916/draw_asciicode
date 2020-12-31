@@ -19,6 +19,7 @@ main.py 와 print_txt.py 의 코드에 폴더의 경로를 수정해주면 된�
 
 - main.py -> 사진이 있는 폴더에 .txt파일을 추가해줌   
 - print_txt.py -> txt파일을 만들지 않고 명령 프롬프트에서 곧바로 볼 수 있음
+- video.py -> 영상을 아스키 코드로 표현하여 나타내줌
 
 ### main.py 수정하기
 아래 두 가지를 바꿔주면 정상적으로 작동한다
@@ -37,6 +38,13 @@ file_path = 'input_file_path'
 ```
 main에서 수정했던 코드와 같다
 
+### video.py 사용하기
+---
+video 폴더에 변환하고 싶은 영상을 넣은 후
+```python
+cap = cv2.VideoCapture('video/파일이름.mp4')
+```
+이렇게 경로명을 지정해 주면 해당하는 비디오가 변환된다.
 
 ## 변경가능사항
 ---
